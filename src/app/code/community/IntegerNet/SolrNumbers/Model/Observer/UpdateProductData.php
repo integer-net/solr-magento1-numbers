@@ -52,12 +52,11 @@ class IntegerNet_SolrNumbers_Model_Observer_UpdateProductData extends Mage_Core_
             }
             return $fieldValue;
         }
-        $updatedFieldValue = str_replace(
-            array_keys(self::MAPPING),
-            array_values(self::MAPPING),
-            $fieldValue
-        );
-        return $updatedFieldValue;
+
+        /** @var IntegerNet_SolrNumbers_Model_CharacterMapping $characterMapping */
+        $characterMapping = Mage::getSingleton('integernet_solr_numbers/characterMapping');
+
+        return $characterMapping->getUpdatedString($fieldValue);
     }
 
     /**

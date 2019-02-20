@@ -22,6 +22,15 @@
                     </integernet_solr_numbers>
                 </observers>
             </integernet_solr_get_product_data>
+            <integernet_solr_update_query_text>
+                <observers>
+                    <integernet_solr_numbers>
+                        <type>singleton</type>
+                        <class>integernet_solr_numbers/observer_updateSearchQuery</class>
+                        <method>execute</method>
+                    </integernet_solr_numbers>
+                </observers>
+            </integernet_solr_update_query_text>
         </events>
     </global>
 </config>
