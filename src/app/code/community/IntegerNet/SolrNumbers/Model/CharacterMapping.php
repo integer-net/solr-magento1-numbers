@@ -25,8 +25,8 @@ class IntegerNet_SolrNumbers_Model_CharacterMapping
     );
 
     /**
-     * @param string|string[] $string
-     * @return string|string[]
+     * @param string $string
+     * @return string
      */
     public function getUpdatedString($string)
     {
