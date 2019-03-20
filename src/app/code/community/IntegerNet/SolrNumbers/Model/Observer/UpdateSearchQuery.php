@@ -6,7 +6,7 @@
  * @author     Andreas von Studnitz <avs@integer-net.de>
  */
 
-class IntegerNet_SolrNumbers_Model_Observer_UpdateProductData extends Mage_Core_Model_Observer
+class IntegerNet_SolrNumbers_Model_Observer_UpdateSearchQuery extends Mage_Core_Model_Observer
 {
     /**
      * @param Varien_Event_Observer $observer
